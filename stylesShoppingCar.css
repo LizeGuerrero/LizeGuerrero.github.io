@@ -9,6 +9,15 @@ body {
     background-color: black;
     padding-top: 80px;
 }
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand img{
+    height: 30px;
+    width: 30px;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
