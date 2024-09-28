@@ -63,7 +63,7 @@ header {
     gap: 50px;
     margin-bottom: 20px;
 }
-.contenedor>div{
+.contenedor>article{
 
     height: 500px; /* Fijamos una altura uniforme para todos los contenedores */
     width: 320px; /* Fijamos el ancho también */
@@ -76,7 +76,7 @@ header {
     overflow: hidden; /* Esto recorta el contenido que desborda */
     position: relative; /* Necesario para hacer transiciones dentro */
 }
-.contenedor>div:hover{
+.contenedor>article:hover{
     white-space: normal; /* Permite que el texto se muestre en varias líneas */
     overflow: auto; /* Habilita el desplazamiento si es necesario */
     height: auto; /* Permite ajustar el tamaño para mostrar todo el contenido */
