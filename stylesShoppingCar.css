@@ -125,3 +125,40 @@ header {
 .informacion button:hover {
     background-color: yellow;
 }
+
+.menu-landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-logo {
+    display:grid; /* Si quisiera los elementos juntos solo le doy display flex. */
+    grid-template-columns: 1fr 1fr;
+    background-color: black;   
+    align-items: center;
+}
+
+.container-logo>img {
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+}
+
+.container-logo>h1 {
+    justify-self:left;
+    
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.container-socialMediaBar {
+    display:grid;
+    justify-content: end;
+    padding-right: 60px;
+    align-items: center;
+    grid-template-columns: repeat(4, 90px);
+    grid-column-gap: 5px;
+    background-color: black;
+}
+
