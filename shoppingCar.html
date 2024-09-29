@@ -1,76 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebShopGamer</title>
-    <link href="stylesShoppingCar.css" rel="stylesheet">
-    <link rel="icon" href="img/icon.png">
+    <link href="stylesShoppingCar.css" rel="stylesheet" />
+    <link rel="icon" href="img/icon.png" />
     <!-- Tipografia 1 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
 
     <!-- Tipografia 2 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
 </head>
-<body>
 
+<body>
     <header id="header">
         <div class="brand">
-            <img src="img/logo.png" alt="logo">
+            <img src="img/logo.png" alt="logo" />
             <h1>WebShopGamer</h1>
         </div>
-        
-        <img class="carrito" src="img/carrito.png" alt="carrito compras">
+
+        <aside class="submenu">
+            <img class="carritoImg" src="img/carrito.png" alt="carrito compras" />
+            <div id="carrito">
+                <table id="lista-carrito">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+            </div>
+        </aside>
+
     </header>
 
-    <main class="contenedor" id="contenedor">
-        <article>
-            <img src="img/imagen1.jpg" alt="producto 1">
-            <div class="informacion">
-            <p>GeForce RTX 4060 Ti Ventus 3X 8G</p>
-            <p class="precio">$100<span>.000</span></p>
-            <button>Comprar</button>
-            </div>
-        </article>
-        <article>
-            <img src="img/imagen2.jpg" alt="producto 1">
-            <div class="informacion">
-            <p>Chasis Lian Dynamic Evo RGB</p>
-            <p class="precio">$2.075<span>.000</span></p>
-            <button>Comprar</button>
-            </div>
-        </article>
-        <article>
-            <img src="img/imagen3.jpg" alt="producto 1">
-            <div class="informacion">
-            <p>Board ASRock 550 Phanthom Gaming</p>
-            <p class="precio">$641<span>.000</span></p>
-            <button>Comprar</button>
-            </div>
-        </article>
-        
-        <article>
-            <img src="img/imagen4.png" alt="producto 1">
-            <div class="informacion">
-            <p>Ventilador Kit x3 Thermaltake</p>
-            <p class="precio">$448<span>.000</span></p>
-            <button>Comprar</button>
-            </div>
-        </article>
-        
-        <a href="https://wa.me/573186422268?text=Hola%20quiero%20más%20información" class="whatsapp-button" target="_blank">
-            <img src="img/icono_whtp1.jpg" alt="WhatsApp">
-        </a>
-        
+    <main>
+
+        <article class="product-content" id="lista-1">
+
+            <article class="product">
+                <img src="img/imagen1.jpg" alt="Imagen Producto">
+                <div class="product-txt">
+                    <h3>GeForce RTX 4060 Ti Ventus 3X 8G</h3>
+                    <p class="precio">$<span>2.101.000</span></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
+                </div>
+            </article>
+
+            <article class="product">
+                <img src="img/imagen2.jpg" alt="Imagen Producto">
+                <div class="product-txt">
+                    <h3>Chasis Lian Dynamic Evo RGB</h3>
+                    <p class="precio">$<span>844.000</span></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
+                </div>
+            </article>
+
+            <article class="product">
+                <img src="img/imagen3.jpg" alt="Imagen Producto">
+                <div class="product-txt">
+                    <h3>Board ASRock 550 Phanthom Gaming</h3>
+                    <p class="precio">$<span>502.000</span></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
+                </div>
+            </article>
+
+            <article class="product">
+                <img src="img/imagen4.png" alt="Imagen Producto">
+                <div class="product-txt">
+                    <h3>Ventilador Kit x3 Thermaltake</h3>
+                    <p class="precio">$<span>448.000</span></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
+                </div>
+            </article>
+
+            <a href="https://wa.me/573186422268?text=Hola%20quiero%20más%20información" class="whatsapp-button"
+                target="_blank">
+                <img src="img/icono_whtp1.jpg" alt="WhatsApp" />
+            </a>
+
     </main>
-  
 
     <script src="scriptShoppingCar.js"></script>
 </body>
+
 </html>
