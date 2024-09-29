@@ -12,6 +12,7 @@ body {
 .brand{
     display: flex;
     align-items: center;
+    flex-wrap: wrap-reverse;
     gap: 10px;
 }
 .brand img{
