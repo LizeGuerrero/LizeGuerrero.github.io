@@ -30,28 +30,7 @@ function comprarElemento(e) {
         const infoElemento = leerDatosElemento(elemento);
         agregarAlCarrito(infoElemento);
     }
-<<<<<<< HEAD
-})
 
-// Obtener las referencias al botón y al audio
-const button = document.getElementById('floatbutton1');
-const song = document.getElementById('song');
-
-// Función para alternar entre reproducir y pausar
-function PlayOPause() {
-    if (song.paused) {
-        song.play();
-        button.textContent = 'Pause Music';
-    } else {
-        song.pause();
-        button.textContent = 'Play Music';
-    }
-}
-
-// Asignar el evento de clic al botón de música
-button.addEventListener('click', PlayOPause);
-
-=======
 }
 
 function leerDatosElemento(elemento) {
@@ -191,4 +170,21 @@ function aumentarCantidad(e) {
     actualizarCarrito(); // Actualizar el carrito después de aumentar la cantidad
     guardarCarritoEnLocalStorage(); // Actualizar localStorage
 }
->>>>>>> 875bc052a2235b3ee8e4a4b60555812d0590a28a
+
+// Obtener las referencias al botón y al audio
+const button = document.getElementById('floatbutton1');
+const song = document.getElementById('song');
+
+// Función para alternar entre reproducir y pausar
+function PlayOPause() {
+    if (song.paused) {
+        song.play();
+        button.textContent = 'Pause Music';
+    } else {
+        song.pause();
+        button.textContent = 'Play Music';
+    }
+}
+
+// Asignar el evento de clic al botón de música
+button.addEventListener('click', PlayOPause);
